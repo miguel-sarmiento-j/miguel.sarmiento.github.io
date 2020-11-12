@@ -1,0 +1,576 @@
+/* IBMPlexMono-Medium */
+/* font-family: 'IBM Plex Mono', monospace; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+  margin-left: auto;
+  margin-right: auto;
+    /*font-family: sans-serif;*/
+    font-family: 'IBM Plex Mono', monospace;
+    max-width: 400px;
+  }
+   
+h1 {
+  font-size: 36px;
+  font-weight: lighter;
+  display: inline;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.inline{
+  display: block;
+}
+
+p{
+  font-size: 14px;
+}
+
+.lineThrough{
+  text-decoration: line-through;
+}
+
+.firstParagraph{
+  width: 100%;
+}
+
+  .respmenu a { 
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    max-width: 200px;
+    background: #0000EC;
+    font-size: 16px;
+  }  
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;  
+  }
+   
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 24px;
+    pointer-events: none;
+  }
+   
+  .respmenu input[type="checkbox"] {
+    opacity: 0; 
+  }
+   
+  .respmenu {
+    color: black;
+    position: relative; 
+    background: white;
+    min-height: 24px;
+    margin: 10px;
+  }
+   
+  .respmenu nav {
+    display: none;
+  }
+   
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+   
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+   
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+  .respmenu ul {
+    background: #0000EC;
+  }
+  .episodios{
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  
+  .rotate-background {
+    position: relative;
+    
+    width: 100%;
+    overflow: hidden;
+    border: 0px solid #0000FF;
+  }
+  .rotate-background svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  .episodios h2{
+    color: #FFFFFF;
+    margin-left: 16px;
+  }
+  .episodios div {
+    padding-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .episodios iframe{
+    width: 298px;
+    height: 232px;
+  }
+
+  .deDondeVenimos {
+    margin-top: -100px;
+    width: 100%;
+  }
+
+  .deDondeVenimos img{
+    width: 360px;
+    height: 519px;
+  }
+
+  .deDondeVenimos h2{
+    width: 288px;
+    color: #060A24;
+    margin: 16px;
+  }
+
+  .deDondeVenimos p{
+    width: 288px;
+    margin: 16px;
+    font-size: 14px;
+  }
+
+  .invitados{
+    margin-top: 50px;
+  }
+
+  .invitados img{
+    width: 100%;
+  }
+
+  .temas {
+    margin-top: 50px;
+  }
+
+  .temas h2{
+    margin: 16px;
+  }
+  .temas div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .temas div {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .temas div section {
+    text-align: center;
+  }
+
+  .temas img {
+    width: 104px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+  }
+
+  .temas h3 {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .novedades{
+    margin: 50px;
+  }
+
+  .novedades h2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 288px;
+    color: #FFFFFF;
+    text-align: center;
+    
+  }
+
+  .boton {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: #00F3BB;
+    width: 288px;
+    height: 48px;
+    text-align: center;
+  }
+
+  .boton h4{
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 100%;
+    size: 16px;
+    padding-top: 16px;
+    text-align: center;
+  }
+  
+  footer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .socialNetwork{
+    margin-top: 10px;
+    font-size:14px;
+    color:#060A24;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .copyright{
+    text-align: center;
+  }
+
+  .copyright h2{
+    font-size: 14px;
+  }
+  
+
+@media only screen and (min-width:600px){
+  body {
+    margin-left: auto;
+    margin-right: auto;
+      /*font-family: sans-serif;*/
+      font-family: 'IBM Plex Mono', monospace;
+      max-width: 1400px;
+    }
+  h1 {
+    font-size: 36px;
+    font-weight: lighter;
+    display: inline;
+  }
+  
+  h2 {
+    font-size: 48px;
+    font-weight: lighter;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  
+  .inline{
+    display: block;
+  }
+  
+  p{
+    font-size: 16px;
+  }
+
+ 
+    .respmenu a { 
+        color: #060A24;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        max-width: 200px;
+        background: white;
+        font-size: 16px;
+      }  
+      .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+        display: none;
+      }
+
+
+      a:hover {
+        color: #00F3BB;
+        text-decoration: line-through;
+      }
+      a:active {
+        color: #060A24;
+        text-decoration: line-through;
+      }
+      .inline{
+        display: inline;
+      }
+
+      .firstParagraph{
+        width: 628px;
+        margin-bottom: 50px;
+        text-align: left;
+      }
+      .firstParagraph p{
+        margin-bottom: 50px;
+      }
+
+      .respmenu {
+        color: black;
+        position: relative; 
+        background: white;
+        min-height: 24px;
+        margin-bottom: 100px;
+      }
+       
+      .respmenu nav {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+      }
+       
+      .respmenu input:checked ~ nav {
+        display: block;
+      }
+       
+      .respmenu .fa-bars {
+        display: none;
+      }
+       
+      .respmenu .fa-times {
+        display: none;
+      }
+      .respmenu ul {
+        background: white
+      }
+      .respmenu li {
+        display: inline-block;
+      }
+      
+      .episodios{
+        margin-top: 100px;
+        margin-bottom: 200px;
+      }
+      
+      .rotate-background {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border: 0px solid #0000FF;
+      }
+      .rotate-background svg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+      }
+
+      .episodios h2{
+        color: #FFFFFF;
+        margin-left: 200px;
+      }
+      .episodios div {
+        margin-top: 40px;
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    
+      .episodios iframe{
+        width: 584px;
+        height: 232px;
+        margin: 10px;
+      }
+    
+      .deDondeVenimos {
+        margin-top: -130px;
+        width: 100%;
+        height: 660px;
+      }
+
+      .deDondeVenimos div {
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .deDondeVenimos div section{
+        text-align: left;
+      }
+
+      .verticalAlign{
+        padding-top: 150px;
+        vertical-align: middle;
+      }
+    
+      .deDondeVenimos div section img{
+        height: 660px;
+      }
+    
+      .deDondeVenimos h2{
+        width: 288px;
+        color: #060A24;
+        margin: 16px;
+      }
+    
+      .deDondeVenimos p{
+        width: 288px;
+        margin: 16px;
+        font-size: 14px;
+      }
+    /*
+      .invitados{
+    
+      }
+    */
+
+    .invitados h2{
+      margin-left: 200px;
+    }
+
+    .invitados div {
+      margin-top: 20px;
+      padding-left: 0px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .invitados img{
+      width: 33%;
+    }
+
+    /*
+      .temas {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    */
+      .temas h2{
+        margin-left: 200px;
+      }
+      .temas div {
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .temas div section {
+        text-align: center;
+      }
+
+      .temas img {
+        width: 7.2%px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .temas h3 {
+        width: 288px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    
+      .novedades{
+        background-color: #0000FF;
+        height: 230px;
+        margin-top: 100px;
+      }
+    
+      .novedades h2{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 100%;
+        color: #FFFFFF;
+        text-align: center;
+        
+      }
+    
+      .boton {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        background-color: #00F3BB;
+        width: 24%;
+        height: 1.4%px;
+        text-align: center;
+      }
+    
+      .boton h4{
+        font-family: 'IBM Plex Sans', sans-serif;
+        width: 100%;
+        size: 18px;
+        padding-top: 16px;
+        text-align: center;
+      }
+      
+      .boton:hover {
+        background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: white;
+      }
+
+      footer{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+
+      .socialNetwork{
+        font-size:18px;
+        color:#060A24;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+
+      .socialNetwork i{
+        margin-left: 20px;
+      }
+    
+      .copyright{
+        margin-left: 50px;
+      }
+    
+      .copyright h2{
+        font-size: 16px;
+      }
+
+}
